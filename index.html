@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24a9b9af48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home">
+      <div class="container">
+        <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="home-text">
+        <p>Front End Developer</p>
+        <h1>Hi, I'm <span>Sushant</span><br>Kumar From India</h1>
+      </div>
+    </div>
+  </div>
+  <!----------- about ----------->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>I am a final year student pursuing my Bachelor of Technology in Electronics and Communication discipline. 
+            But I aspire to be a full stack developer . </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links " onclick="opentab('experience')">Experience</p>
+              <p class="tab-links " onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span><br>HTML CSS JavaScript Python SQL</li>
+                <li><span>Library</span><br>ReactJS</li>
+                <li><span>Database</span><br>MySQL</li>
+                <li><span>Software</span><br>Microsoft Power BI</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>July, 23 - Sep, 23</span>Web Development Intern at OctaNet</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span> Bachelor of Technology(ECE) from RIT Roorkee</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-------- Services -------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-titles">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h2>Web Development</h2>
+          <p>I made impresive modern websites for shops, restaurent, etc.</p>
+          <a href="#">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h2>Data Analytics</h2>
+          <p>I am also provide data analysis on freelancing websites</p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!----------portfolio-------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/pizza.png">
+            <div class="layer">
+              <h3>A Food Recipe Webpage</h3>
+              <p>I made a food recipe webpage in one of my internship. In which I have used HTML and CSS only.</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+              <h3>A Restaurant Website</h3>
+              <p>Lorem ipsum dolor sit
+                id jbcjdicas kjcbasvcasc jacbasi
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>An E-Commerce Website</h3>
+              <p>Lorem ipsum dolor sit
+                id jbcjdicas kjcbasvcasc jacbasi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-----------Contact Me------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>sushant1252@gmail.com</p>
+            <p>+91 8265889226</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/mycv.pdf" download="" class="btn">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!---------footer-------->
+<footer>
+  <p>Copyright © Sushant Kumar</p>
+</footer>
+</body>
+
+</html>
