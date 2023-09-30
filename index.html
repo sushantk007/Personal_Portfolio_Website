@@ -44,10 +44,10 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>Programming Languages</span><br>HTML CSS JavaScript Python SQL</li>
-                <li><span>Library</span><br>ReactJS</li>
+                <li><span>Programming Languages</span><br>HTML | CSS | JavaScript | Python | SQL</li>
+                <li><span>Library</span><br>Bootstrap | ReactJS</li>
                 <li><span>Database</span><br>MySQL</li>
-                <li><span>Software</span><br>Microsoft Power BI</li>
+                <li><span>Tools</span><br>GitHub | Microsoft Power BI</li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -150,10 +150,11 @@
           <div class="contact-right">
             <form>
               <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea type="Message" name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn">Submit</button>
             </form>
+              <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -162,6 +163,23 @@
 <footer>
   <p>Copyright © Sushant Kumar</p>
 </footer>
+    <!-------------Contact Email------------->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx5uqnGFpUIesSTia5CfAdAyXw0MJXALOmmEvnis9Bl9lQFxZYhZXLQJWToH4tPkH7pNA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){msg.innerHTML = ""},3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 
 </html>
