@@ -280,16 +280,24 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 50px;
-    color: #ababab;
+    color: #262626;
     display: inline-block;
     transform: transform 0.5s;
 }
 .social-icons a:hover{
-    color:#659dbd;
-    transform: translateY(-5px);
+    color: #ffffff;
+    transform: translateY(-3px);
 }
 .btn{
     display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #659dbd;
+    padding: 14px 50px;
+    text-decoration: none;
+    background: #659dbd;
+    color:#fff;
+    border-radius: 5px;
     
 }
 .contact-right form{
@@ -314,7 +322,12 @@ footer{
     font-weight: 300;
     margin-top: 20px;
 }
-
+/*------------Contact Email--------------*/
+#msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+}
 
 
 
